@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Flower and Gift Delivery</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Flower and Gift Shop</h1>
+    </header>
+
+   
+    <section id="product-catalogue">
+        <h2>Product Catalogue</h2>
+
+        <div class="product">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2021/4/EM/TQ/ZH/118480258/red-rose-flower-500x500.jpeg" alt="Beautiful Rose">
+            <h3>Beautiful Rose</h3>
+            <p>Price: $10</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Add more products -->
+
+        <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul>
+                <!-- Cart items will be displayed here -->
+            </ul>
+            <p>Total: $0</p>
+            <button>Checkout</button>
+        </div>
+    </section>
+
+    <section id="admin-panel">
+        <h2>Admin Panel</h2>
+        <form>
+            <input type="text" placeholder="Product Name">
+            <input type="text" placeholder="Price">
+            <select>
+                <option>Flowers</option>
+                <option>Gifts</option>
+                <!-- Add more categories -->
+            </select>
+            <button>Add Product</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Flower and Gift Shop</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Flower and Gift Shop</title>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showFlowers()">Flowers</a></li>
+            <li><a href="#" onclick="showGifts()">Gifts</a></li>
+            <li><a href="#" onclick="showHome()">Home</a></li>
+        </ul>
+    </nav>
+
+    <section id="content">
+        <h2>Home Page</h2>
+        <p>Welcome to our online flower and gift shop. Click on the categories to explore our products.</p>
+    </section>
+
+    <section id="flowers" style="display: none;">
+        <h2>Flowers</h2>
+        <ul>
+            <li>Rose - $10</li>
+            <li>Tulip - $8</li>
+            <li>Lily - $12</li>
+            <!-- Add more flowers -->
+        </ul>
+    </section>
+
+    <section id="gifts" style="display: none;">
+        <h2>Gifts</h2>
+        <ul>
+            <li>Chocolates - $15</li>
+            <li>Teddy Bear - $20</li>
+            <li>Perfume - $30</li>
+            <!-- Add more gifts -->
+        </ul>
+    </section>
+
+    <script>
+        function showFlowers() {
+            document.getElementById("content").style.display = "none";
+            document.getElementById("flowers").style.display = "block";
+            document.getElementById("gifts").style.display = "none";
+        }
+
+        function showGifts() {
+            document.getElementById("content").style.display = "none";
+            document.getElementById("flowers").style.display = "none";
+            document.getElementById("gifts").style.display = "block";
+        }
+
+        function showHome() {
+            document.getElementById("content").style.display = "block";
+            document.getElementById("flowers").style.display = "none";
+            document.getElementById("gifts").style.display = "none";
+        }
+    </script>
+</body>
+</html>
