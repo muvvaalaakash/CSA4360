@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.home-header {
+    background-image: url('background-image.jpg'); /* Replace 'background-image.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color:red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.home-header h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+color:yellow;
+}

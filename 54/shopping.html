@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="C:\Users\muvva\OneDrive\Desktop\54\style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Online Shopping</h1>
+    </header>
+
+    <section id="product-listing">
+        <!-- Product Listing Goes Here -->
+        <div class="product">
+            <img src="C:\Users\muvva\OneDrive\Desktop\54\white-bicycle-standing-park-morning-fitness-loneliness_1153-6768.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1.</p>
+            <p>$19.99</p>
+            <button onclick="addToCart('Product 1', 19.99)">Add to Cart</button>
+            <img src="C:\Users\muvva\OneDrive\Desktop\54\4k-monitor-isolated-on-white-260nw-357968483.webp" alt="Product 1">
+            <h3>Product 2</h3>
+            <p>Description of Product 2.</p>
+            <p>$29.99</p>
+            <button onclick="addToCart('Product 2', 29.99)">Add to Cart</button>
+        </div>
+
+        <!-- Add more product divs as needed -->
+    </section>
+
+    <section id="shopping-cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart Items Go Here -->
+        </ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+    </section>
+
+    <script src="C:\Users\muvva\OneDrive\Desktop\54\script.js"></script>
+</body>
+</html>
